@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginEnd="-3dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/insert_data"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_weight="1"
+            android:background="@color/design_default_color_primary_dark"
+            android:text="@string/insert"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/update_data"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/design_default_color_primary_dark"
+            android:text="@string/update"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/delete_data"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/design_default_color_primary_dark"
+            android:text="@string/delete"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/refresh_data"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/design_default_color_primary_dark"
+            android:text="@string/refresh"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_700"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/all_data"
+        android:textColor="#fff" />
+
+    <TextView
+
+        android:id="@+id/counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:textColor="#000" />
+
+</RelativeLayout>
